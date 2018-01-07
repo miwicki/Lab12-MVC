@@ -17,7 +17,8 @@ Create a website using the MVC architectural pattern that asks the customer to i
 they are searching for. The customer should then be redirected to another page that will show the filtered results from the inventory. <br /><br />
 
 ## Stretch (up to 5pts)
-Make your website "client ready" - Add a stylesheet to your site and dress it up. Make it look like a real website.<br />
+1. Make your website "client ready" - Add a stylesheet to your site and dress it up. Make it look like a real website.
+2. Filter off of more than just the wine points and price. Make some of the filters optional. <br />
 Remember - This could go on your porfolio, employers may be viewing it, make it something you are proud of. We will be deploying
 this site to Azure by the end of the week. 
 
