@@ -1,0 +1,17 @@
+@Model List<DontWineAboutIt.Models.Wine>
+
+    @{}
+
+    <p>
+        Hi @ViewBag.Name
+    </p>
+
+    @foreach (var wine in Model)
+    {
+        <li>@wine.Description</li>
+        <li>@wine.Designation </li>
+        <li>@wine.Region1</li>
+        <li>@wine.Region2 </li>
+        <li>@wine.Country </li>
+        <li>@wine.Winery</li>
+    }
