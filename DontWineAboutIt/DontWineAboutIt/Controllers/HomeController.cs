@@ -16,17 +16,35 @@ namespace DontWineAboutIt.Controllers
         }
 
         [HttpPost]
-        public IActionResult Index(string name, string price, string points)
+        public IActionResult Index(string name, Wine wine)
         {
-            return RedirectToAction("Results", new { name, price, points });
+            return RedirectToAction("Results", new {name, wine.Price, wine.Points, wine.Country});
         }
 
         [HttpGet]
-        public IActionResult Results(string name, string price, string points)
+        public IActionResult Results(string name, Wine wine)
         {
             ViewBag.Name = name;
-            List<Wine> wineList = Wine.FilterWineList(price, points);
-            return View(wineList);
+            ViewBag.NotFiltered = false;
+
+            List<Wine> allWines = Wine.GetWineList().Skip(1).ToList();
+
+            if (!String.IsNullOrEmpty(wine.Price))
+                allWines = allWines.Where(w => w.Price == wine.Price).ToList();
+
+            if (!String.IsNullOrEmpty(wine.Price))
+                allWines = allWines.Where(w => w.Points == wine.Points).ToList();
+
+            if (!String.IsNullOrEmpty(wine.Country))
+                allWines = allWines.Where(w => w.Country.ToLower() == wine.Country.ToLower()).ToList();
+
+            if (allWines.Count > 100)
+            {
+                allWines = allWines.Take(100).ToList();
+                ViewBag.NotFiltered = true;
+            }
+
+            return View(allWines);
         }
     }
 }
