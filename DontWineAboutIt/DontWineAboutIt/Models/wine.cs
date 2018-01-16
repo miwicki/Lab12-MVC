@@ -47,23 +47,17 @@ namespace DontWineAboutIt.Models
                         Designation = wineList[3],
                         Points = wineList[4],
                         Price = wineList[5],
-                        Region1 = wineList[6],
-                        Region2 = wineList[7],
-                        Variety = wineList[8],
-                        Winery = wineList[9]
+                        Province = wineList[6],
+                        Region1 = wineList[7],
+                        Region2 = wineList[8],
+                        Variety = wineList[9],
+                        Winery = wineList[10]
                     });
 
                     counter++;
                 }
             }
             return myWine;
-        }
-
-        public static List<Wine> FilterWineList(string price, string pointRating)
-        {
-            List<Wine> allWines = GetWineList();
-            IEnumerable<Wine> filteredByPrice = allWines.Where(w => w.Price == price);
-            return filteredByPrice.Where(w => w.Points == pointRating).ToList();
         }
     }
 }

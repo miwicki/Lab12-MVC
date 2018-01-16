@@ -11,13 +11,15 @@ namespace DontWineAboutIt
 {
     public class Startup
     {
-      
+        // This method gets called by the runtime. Use this method to add services to the container.
+        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            // Adds MVC Middleware
+            // Add MVC Middleware
             services.AddMvc();
         }
 
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
@@ -25,7 +27,7 @@ namespace DontWineAboutIt
                 app.UseDeveloperExceptionPage();
             }
 
-            // Custom routing template
+            // Default routing template
             app.UseMvc(route =>
             {
                 route.MapRoute(
@@ -33,7 +35,7 @@ namespace DontWineAboutIt
                     template: "{controller=Home}/{action=Index}/{id?}/");
             });
 
-            // Allows us to use static files
+            // Required to use static files such as CSS and CSV
             app.UseStaticFiles();
 
             app.Run(async (context) =>
