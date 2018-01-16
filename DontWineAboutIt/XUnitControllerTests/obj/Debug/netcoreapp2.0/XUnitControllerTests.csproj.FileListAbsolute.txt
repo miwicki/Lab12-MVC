@@ -1,0 +1,3 @@
+C:\Users\Matt\source\repos\Lab12-MVC\DontWineAboutIt\XUnitControllerTests\obj\Debug\netcoreapp2.0\XUnitControllerTests.csproj.CoreCompileInputs.cache
+C:\Users\Matt\source\repos\Lab12-MVC\DontWineAboutIt\XUnitControllerTests\obj\Debug\netcoreapp2.0\XUnitControllerTests.AssemblyInfoInputs.cache
+C:\Users\Matt\source\repos\Lab12-MVC\DontWineAboutIt\XUnitControllerTests\obj\Debug\netcoreapp2.0\XUnitControllerTests.AssemblyInfo.cs
