@@ -1,0 +1,8 @@
+C:\Users\Matt\source\repos\Lab12-MVC\DontWineAboutIt\DontWineAboutIt\bin\Debug\netcoreapp2.0\DontWineAboutIt.deps.json
+C:\Users\Matt\source\repos\Lab12-MVC\DontWineAboutIt\DontWineAboutIt\bin\Debug\netcoreapp2.0\DontWineAboutIt.runtimeconfig.json
+C:\Users\Matt\source\repos\Lab12-MVC\DontWineAboutIt\DontWineAboutIt\bin\Debug\netcoreapp2.0\DontWineAboutIt.runtimeconfig.dev.json
+C:\Users\Matt\source\repos\Lab12-MVC\DontWineAboutIt\DontWineAboutIt\bin\Debug\netcoreapp2.0\DontWineAboutIt.dll
+C:\Users\Matt\source\repos\Lab12-MVC\DontWineAboutIt\DontWineAboutIt\obj\Debug\netcoreapp2.0\DontWineAboutIt.csprojResolveAssemblyReference.cache
+C:\Users\Matt\source\repos\Lab12-MVC\DontWineAboutIt\DontWineAboutIt\obj\Debug\netcoreapp2.0\DontWineAboutIt.csproj.CoreCompileInputs.cache
+C:\Users\Matt\source\repos\Lab12-MVC\DontWineAboutIt\DontWineAboutIt\obj\Debug\netcoreapp2.0\DontWineAboutIt.AssemblyInfoInputs.cache
+C:\Users\Matt\source\repos\Lab12-MVC\DontWineAboutIt\DontWineAboutIt\obj\Debug\netcoreapp2.0\DontWineAboutIt.AssemblyInfo.cs
